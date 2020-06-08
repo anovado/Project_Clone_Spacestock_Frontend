@@ -5,7 +5,7 @@ export const doLogin = (props) => {
   return async (dispatch, getState) => {
     await axios({
       method: "GET",
-      url: "http://0.0.0.0:5050/signin",
+      url: "https://spacestockbe.andrenovado.my.id/signin",
       params: {
         email: getState().user.email,
         password: getState().user.kataKunci,
@@ -42,7 +42,7 @@ export const doSignUp = (props) => {
     };
     const myJSON = JSON.stringify(bodyRequest);
     await axios
-      .post("http://0.0.0.0:5050/client", myJSON, {
+      .post("https://spacestockbe.andrenovado.my.id/client", myJSON, {
         headers: {
           "Content-Type": "application/json; charset=utf-8",
           Accept: "application/json; charset=utf-8",
@@ -72,7 +72,7 @@ export const doLogOut = (e) => {
 //   return async (dispatch, getState) => {
 //     const token = localStorage.getItem("token");
 //     await axios
-//       .get("http://0.0.0.0:5050/client", {
+//       .get("https://spacestockbe.andrenovado.my.id/client", {
 //         headers: {
 //           "Content-Type": "application/json; charset=utf-8",
 //           Accept: "application/json; charset=utf-8",

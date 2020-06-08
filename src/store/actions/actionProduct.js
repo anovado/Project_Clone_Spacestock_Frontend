@@ -14,7 +14,7 @@ export const changeInputProduct = (e) => {
 export const getProductData = (props) => {
   return async (dispatch) => {
     await axios
-      .get("http://0.0.0.0:5050/apartment", {
+      .get("https://spacestockbe.andrenovado.my.id/apartment", {
         headers: {
           "Content-Type": "application/json; charset=utf-8",
           Accept: "application/json; charset=utf-8",
@@ -38,7 +38,7 @@ export const getRes = (category) => {
   return async (dispatch) => {
     localStorage.removeItem("address");
     const response = await axios.get(
-      "http://0.0.0.0:5050/apartment/" + category
+      "https://spacestockbe.andrenovado.my.id/apartment/" + category
     );
 
     dispatch({
