@@ -1,0 +1,932 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+* {
+  color: #2a3038;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+.navbar-mdbnavbar {
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0px 0px 0px;
+}
+
+#jumbotron-picture {
+  background-image: url(../images/banner.jpg);
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -60px;
+}
+
+#panel-in-jumbotron {
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  border-radius: 16px;
+}
+
+.dropdown-navbar {
+  background-color: transparent;
+  color: #2a3038;
+  padding: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 10px; */
+  text-align: left;
+}
+
+#dropdown-building {
+  width: 350px;
+}
+
+.dropbtn {
+  background-color: white;
+  color: #2a3038;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid #b6b6b3;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  font-size: 9px;
+  border-radius: 16px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+  /* width: 300px; */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-contet a:hover {
+  background-color: #f15c60;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.hr-in-dropdown {
+  color: #ccc;
+  margin: 0;
+}
+
+.search-select-option {
+  background-color: white;
+}
+
+/* switch button */
+.switch-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  padding: 0px;
+  border-radius: 22px;
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #f15c60;
+  color: white;
+}
+
+/* search jumbotron */
+#inner-div-search {
+  margin-top: 20px;
+  padding: 25px 16px 25px 16px;
+}
+
+.search-input-form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #b6b6b3;
+  padding: 2px;
+  border-radius: 8px;
+}
+
+.search-input-text {
+  flex-grow: 2;
+  border: none;
+}
+
+.search-input-text:focus {
+  outline: none;
+  border: none;
+}
+
+#search-button-jumbotron {
+  color: white;
+  background-color: #f15c60;
+  border-radius: 8px;
+}
+
+/* PANEL */
+#container-panel {
+  box-shadow: 0px 6px 6px -6px rgba(0, 0, 0, 0.12);
+}
+
+/* carousel */
+.carousel-items {
+  border-radius: 16px;
+  padding: 5px;
+  max-width: 972px;
+}
+
+.carousel-articles {
+  border-radius: 16px;
+  max-height: 280px;
+  width: 415px;
+}
+
+/* listing apartemen home */
+.card-box-apartemen {
+  border-radius: 16px;
+  padding-right: 0px;
+  box-shadow: 0px 0px 0px;
+  border: 1px solid rgba(183, 183, 180, 0.4);
+}
+
+.card-box-apartemen:hover {
+  border-radius: 16px;
+  padding-right: 0px;
+  /* box-shadow: 0px 0px 0px; */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(183, 183, 180, 0.4);
+}
+
+.icon-details-location {
+  background-color: #fafafa;
+  padding: 10px;
+  width: 70%;
+  border-radius: 0px 12px 12px 0px;
+  margin-top: -20px;
+  z-index: 1;
+}
+
+.icon-details-tag {
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+}
+.subtitle-home {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  /* margin-left: -30px; */
+}
+
+.lihat-semua {
+  color: rgb(241, 92, 96);
+  font-size: 12px;
+  font-weight: 400;
+  padding-top: 10px;
+  text-align: right;
+}
+
+.title-inside-card {
+  color: #2a3038;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  margin-top: 0px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.gedung-card {
+  color: #2a3038;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 250px;
+}
+
+.harga-sewa-mulai {
+  color: #c3c4c5;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15.7px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.price-in-card {
+  color: rgb(42, 48, 56);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+.per-tahun {
+  color: rgb(42, 48, 56);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.dapat-dicicil {
+  color: rgb(12, 87, 119);
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15.7px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.card-details {
+  color: rgb(42, 48, 56);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  height: 15px;
+  line-height: 15.708px;
+  padding-top: 10px;
+  position: relative;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.unit-id-card {
+  color: rgb(195, 196, 197);
+  cursor: pointer;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  height: 15px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  line-height: 15.708px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-bottom: 0px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  user-select: none;
+}
+
+/* join now banner invitation */
+.daftarkan-properti {
+  color: rgb(42, 48, 56);
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+
+.desc-daftarkan-properti {
+  color: rgb(42, 48, 56);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-bottom: 16px;
+}
+
+.hubungi-kami {
+  background-color: rgb(241, 92, 96) !important;
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  border-bottom-color: rgb(248, 250, 251);
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(248, 250, 251);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(248, 250, 251);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(248, 250, 251);
+  border-top-style: none;
+  border-top-width: 0px;
+  box-sizing: border-box;
+  color: rgb(248, 250, 251);
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  /* font-weight: 600; */
+  height: 40px;
+  line-height: 40px;
+  margin-top: 16px;
+  min-width: 124px;
+  outline-color: rgb(248, 250, 251);
+  outline-style: none;
+  outline-width: 0px;
+  padding-bottom: 0px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 0px;
+  transition-delay: 0s;
+  transition-duration: 0.6s;
+  transition-property: background;
+  transition-timing-function: ease;
+  box-shadow: 0px 0px 0px 0px;
+  border-radius: 8px;
+}
+
+.hubungi-kami:hover {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+/* FOOTER */
+.footer-address {
+  color: rgb(42, 48, 56);
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 0px;
+  max-width: 320px;
+  /* text-align: right; */
+}
+
+.footer-title {
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* NAVBAR WHITE */
+#container-navbar-white {
+  /* position: fixed; */
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  box-shadow: rgb(243, 243, 243) 1px 1px 1px;
+  z-index: 1002;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  height: 71px;
+}
+
+#nav-item-white {
+  justify-content: space-between !important;
+  margin-left: 20px;
+}
+
+.logo-icon-whatsapp {
+  color: #f15c60 !important;
+}
+
+.frame-in-pictures {
+  width: 280px;
+  height: 100%;
+  margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.showNav {
+  transition: opacity 400ms;
+}
+
+.hideNav {
+  opacity: 0;
+}
+
+/* ribbon */
+.ribbon-horizontal {
+  position: absolute;
+  border: 13px solid #fcdd5a;
+  border-left: 0;
+  border-right: 10px solid transparent;
+  height: 0;
+  line-height: 0;
+  width: 160px;
+  color: white;
+  z-index: 1;
+  /* -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); */
+}
+
+.ribbon-horizontal span {
+  position: relative;
+  padding: 0 16px 0 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+  color: rgb(42, 48, 56);
+  font-weight: 400;
+}
+
+.ribbon-horizontal-pink {
+  position: absolute;
+  border: 13px solid #ff8083;
+  border-left: 0;
+  border-right: 10px solid transparent;
+  height: 0;
+  line-height: 0;
+  width: 120px;
+  color: white;
+  z-index: 1;
+  /* -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); */
+}
+
+.ribbon-horizontal-pink div {
+  position: relative;
+  padding: 0 16px 0 4px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  white-space: nowrap;
+  color: rgb(42, 48, 56);
+  font-weight: 400;
+}
+
+/* APARTMENT DETAILS */
+.apartment-name {
+  color: #2a3038;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 32px;
+}
+
+.apartment-unit-id {
+  font-family: "Inter", sans-serif;
+  color: #2a3038;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+#building-name-unit-id {
+  color: #0c5777;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.grey-box-container {
+  background-color: #fbfbfb;
+  width: 200px;
+  height: 100%;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.status-details-logo {
+  width: 50px;
+  height: 45px;
+}
+
+.status-details-title {
+  color: #2a3038;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.status-details-content {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #2a3038;
+}
+
+.tentang-unit {
+  color: #2a3038;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+.tentang-unit-details {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  margin: 0px 0px 16px 0px;
+  padding-right: 30px;
+}
+
+.kelengkapan-unit-logo {
+  height: 24px;
+}
+
+/* PAYMENT */
+.payment-container {
+  border-radius: 16px;
+  border: 1px solid rgba(195, 196, 197, 0.4);
+}
+
+.cicilan-perbulan {
+  color: #ccc;
+  padding-top: 15px;
+  border-top: 1px solid #c3c4c5;
+}
+
+.button-tunai-cicilan {
+  border: 1px solid #0c5777;
+  background-color: #fff;
+  color: #0c5777;
+  cursor: pointer;
+  margin-right: 6px;
+  text-align: left;
+  height: 100%;
+  width: 88px;
+  line-height: normal;
+  list-style: none;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.button-tunai-cicilan:focus {
+  border: 1px solid #0c5777;
+  background-color: #0c5777;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+  text-align: left;
+  height: 100%;
+  width: 88px;
+  line-height: normal;
+  list-style: none;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+#subtitle-inside-button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#subtitle-inside-button:focus {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.button-tunai-cicilan-on {
+  border: 1px solid #0c5777;
+  background-color: #0c5777;
+  color: white;
+  cursor: pointer;
+  margin-right: 6px;
+  text-align: left;
+  height: 100%;
+  width: 88px;
+  line-height: normal;
+  list-style: none;
+  padding: 8px 6px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+#subtitle-inside-button-on {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+#details-inside-button {
+  font-size: 12px;
+  color: #0c5777;
+}
+
+#details-inside-button-on {
+  font-size: 12px;
+  color: white;
+}
+
+.input-form-in-payment {
+  height: 37px;
+  border-radius: 8px;
+}
+
+.input-form-in-payment:focus {
+  border: red;
+}
+
+#exampleFormControlTextarea5 {
+  border-radius: 8px;
+}
+
+.btn-submit-payment {
+  cursor: pointer;
+  min-width: 124px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f15c60;
+  color: #f8fafb;
+  border-radius: 8px;
+  box-shadow: 0 0 0;
+}
+
+.btn-submit-payment:hover {
+  cursor: pointer;
+  min-width: 124px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f15c60;
+  color: #f8fafb;
+  border-radius: 8px;
+  box-shadow: 0 0 0;
+}
+
+.btn-submit-whatsapp {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #f15c60;
+  color: #4ca96e;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 0;
+}
+
+.btn-submit-whatsapp:hover {
+  background-color: white;
+  border: 1px solid #f15c60;
+  color: #f15c60;
+  box-shadow: 0 0 0;
+}
+
+/* ABOUT BUILDING */
+.container-about-building {
+  border: 1px solid #c5c2c2;
+  background-color: #fbfbfb;
+  border-radius: 16px;
+}
+
+.picture-about-building {
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); */
+  /* background-size: cover; */
+  background-position: center;
+  width: 386px;
+  height: 298px;
+  border-radius: 16px 0 0 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-inside-picture-building {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10px;
+  color: white;
+}
+
+.address-inside-picture {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#jumlah-unit-tersedia {
+  padding: 10px;
+  background-color: #f15c60;
+  color: white;
+  border-radius: 16px;
+  width: 150px;
+  margin-left: 10px;
+}
+
+/* SIGN IN */
+.register-new-account {
+  background-color: #f15c60 !important;
+  width: 91%;
+  font-size: 14px;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid #f15c60;
+  margin-bottom: 10px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 0 0;
+}
+
+.register-new-account:hover {
+  box-shadow: 0 0 0;
+  color: white;
+}
+
+/* MODAL NAVBAR */
+.modal-content {
+  border-radius: 16px !important;
+  width: 400px;
+  height: 304px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-backdrop {
+  opacity: 0.7 !important;
+}
+
+.modal-form-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.modal-input-form {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-input-form:focus {
+  /* outline: #f15c60; */
+  outline-color: #f15c60 !important;
+  /* border: 1px solid #f15c60; */
+}
+
+.phone-input-form {
+  display: flex;
+  height: 40px;
+  flex-direction: row;
+  border: 1px solid #b6b6b3;
+  padding: 2px;
+  border-radius: 8px;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-input-form2 {
+  /* height: 40px; */
+  border-radius: 8px;
+  border: none;
+  flex-grow: 2;
+}
+
+.modal-input-form:focus {
+  outline: none !important;
+}
+
+.btn-whatsapp-modal {
+  width: 360px;
+  height: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #f15c60 !important;
+  color: white;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+  box-shadow: 0 0 0;
+}
+
+.btn-whatsapp-modal:hover {
+  box-shadow: 0 0 0;
+  color: white;
+}
+
+/* MAP */
+.container-map-slider {
+  border-radius: 16px;
+  border: 1px solid rgb(236, 232, 232);
+  padding: 0;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 458px;
+  border-radius: 16px 0 0 16px;
+}
+
+.rc-slider-step {
+  color: red;
+  width: 270px !important;
+}
+/* 
+.rc-slider .rc-slider-with-marks .rc-slider-rail .rc-slider-step {
+  background-color: #c3c4c5 !important;
+} */
+
+.rc-slider-handle {
+  background-color: #f15c60 !important;
+}
+
+.rc-slider-dot {
+  background-color: #c3c4c5 !important;
+}
+
+.rc-slider-dot-active {
+  background-color: #f15c60 !important;
+}
+
+#row-slider-map {
+  background-color: red;
+}
+/* SIGNATURE */
+.signature-container-background {
+  background-color: #efefef;
+}
+
+.signature-picture {
+  object-fit: cover;
+  width: 383px;
+  height: 396px;
+}
+
+.signature-title {
+  color: #2a3038;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.signature-details {
+  color: #2a3038;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  /* margin-bottom: 1rem; */
+  font-size: 14px;
+}
