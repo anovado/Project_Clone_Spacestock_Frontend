@@ -130,10 +130,9 @@ const WhiteNavbar = (props) => {
                 aria-label="Search"
                 autoComplete="off"
                 id="name"
-                ref="name"
                 list="potentials"
               />
-              <datalist id="potentials" ref="potentials">
+              <datalist id="potentials">
                 {allProducts.map((item, index) => (
                   <Fragment key={index}>
                     <option id="option-list" value={item.id}>
