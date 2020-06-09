@@ -11,10 +11,7 @@ const AboutBuilding = (props) => {
             className="picture-about-building"
             style={{
               background: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url(${building_image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              overflow: "hidden",
-              // marginTop: "-50%",
+              overflow: "hidden"
             }}
           >
             <div className="text-inside-picture-building">

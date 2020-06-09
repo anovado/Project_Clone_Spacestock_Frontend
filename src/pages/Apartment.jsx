@@ -74,7 +74,7 @@ class Apartment extends Component {
     document.getElementById("mapid").innerHTML =
       "<div id='map' height: '458px' className='leaflet-container'></div>";
     const mymap = L.map("map").setView([lat, lon], zoom);
-    L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       // attribution:
       //   '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       subdomains: ["a", "b", "c"],

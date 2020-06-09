@@ -225,6 +225,7 @@ const WhiteNavbar = (props) => {
           </MDBModal>
           {isLogin ? (
             <MDBLink
+              to="#"
               onClick={() => postSignout()}
               className="text-reset my-auto ml-0 font-weight-bold"
               style={{ marginRight: "200px", color: "#f15c60" }}

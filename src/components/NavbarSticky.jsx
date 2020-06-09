@@ -131,7 +131,7 @@ const NavbarSticky = (props) => {
               />
               <datalist id="potentials">
                 {allProducts.map((item, key) => (
-                  <Fragment>
+                  <Fragment key={key}>
                     <option id="option-list" value={item.id}>
                       {item.city}
                     </option>
