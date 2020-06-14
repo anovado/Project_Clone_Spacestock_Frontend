@@ -1,4 +1,4 @@
-# Project Clone [Spacestock.com](https://www.spacestock.com)
+# Project Clone Spacestock.com
 
 ## Made by Andre Novado
 
@@ -17,3 +17,5 @@ This project is created using:
   - Nginx Virtual Machine
   - Travis CICD
   - Kubernetes
+  
+  ## My project is deployed here: [spacestock.andrenovado.my.id](https://spacestock.andrenovado.my.id)
