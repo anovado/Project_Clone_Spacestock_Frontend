@@ -17,7 +17,6 @@ This project is created using:
   - AWS Server
   - Nginx Virtual Machine
   - Travis CICD
-  - Kubernetes
   
 The features of this clone project are:
 - User Login and Registration
