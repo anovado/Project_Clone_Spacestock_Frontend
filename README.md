@@ -1,6 +1,6 @@
 # Project Clone Spacestock.com
 
-## My project is deployed here: [spacestock.andrenovado.my.id](https://spacestock.andrenovado.my.id)
+### My project is deployed here: [spacestock.andrenovado.my.id](https://spacestock.andrenovado.my.id)
 
 The purpose of this project is to clone [spacestock](https://www.spacestock.com) website.
 This project is created using:
@@ -25,4 +25,4 @@ The features of this clone project are:
 - Adjust map's zoom viewing using slider
 
 
-## Made by [Andre Novado](https://www.linkedin.com/in/andre-novado/)
+### Made by [Andre Novado](https://www.linkedin.com/in/andre-novado/)
